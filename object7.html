@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+<body>
+    <script>
+        var mobil = { merk: "Toyota Avanza",
+        tipe: "MPV",
+        harga: 200000000,
+        warna: "merah" };
+
+        mobil.hidupkan = function () { return "Mesin Dihidupkan"; };
+        mobil.pergi = function (tempat) { return "Pergi ke "+ tempat; };
+
+         console.log( mobil.hidupkan() ); // Mesin Dihidupkan
+         console.log( mobil.pergi("Bali") ); // Pergi ke Bali
+    </script>
+</body>
+</html>

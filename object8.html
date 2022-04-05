@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengubah Object Method</title>
+</head>
+<body>
+    <script>
+        var mobil = { merk: "Toyota Avanza",
+        tipe: "MPV",
+        harga: 200000000,
+        warna: "merah",
+        pergi: function (tempat) { return "Pergi ke "+ tempat; }
+ };
+
+        console.log( mobil.pergi("Medan") ); // Pergi ke Medan
+
+         mobil.pergi = "Methodnya sudah tertimpa..";
+
+        console.log( mobil.pergi("Medan") ); // error!
+ // TypeError: mobil.pergi is not a function
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Reference</title>
+</head>
+<body>
+    <script>
+        var mahasiswa = { nama: "Andi",
+        jurusan: "Teknik Informatika" };
+
+         var mahasiswaBaru = mahasiswa;
+
+         console.log( mahasiswa.nama ); // Andi
+         console.log( mahasiswaBaru.nama ); // Andi
+
+         mahasiswa.nama = "Joko";
+         console.log( mahasiswa.nama ); // Joko
+         console.log( mahasiswaBaru.nama ); // Joko
+         mahasiswaBaru.jurusan = "Ekonomi Manajemen";
+         console.log( mahasiswa.jurusan ); // Ekonomi Manajemen
+         console.log( mahasiswaBaru.jurusan ); // Ekonomi Manajemen
+    </script>
+</body>
+</html>
